@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Parquímetro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Parquímetro</h1>
+
+        <h2>Tabela de valores</h2>
+
+        <table>
+            <tr>
+                <th>Valor</th>
+                <th>Tempo</th>
+            </tr>
+            <tr>
+                <td>R$ 1,00</td>
+                <td>30 minutos</td>
+            </tr>
+            <tr>
+                <td>R$ 1,75</td>
+                <td>60 minutos</td>
+            </tr>
+            <tr>
+                <td>R$ 3,00</td>
+                <td>120 minutos (máximo)</td>
+            </tr>
+        </table>
+
+        <div class="botao">
+            <input type="number" id="valor" placeholder="Digite o valor (R$)" step="0.01">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>
